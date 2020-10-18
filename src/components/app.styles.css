@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: url('https://s3-alpha-sig.figma.com/img/ac72/1852/4b10fa0d77778e09591c3fa1ee1e3bdf?Expires=1603670400&Signature=J2iuLyyOQIkq5JIQXjA1m~LOvhZPrR1Z-gGi1NoUpd~-yxyAqPZX2RRbZuh3v98RmLdTIpBrrOLOrgxfTHKxSakSzHwhV9BYjcWVUyO0SF83Urr9nQqc~TXcPVSrk7wGdU9xGP68vakPHMclpNub-BzwHDeOMixRKrSUUAsMsRCeErPwc2Ar4k2LeoReQU-jLF9oQZzmamO3kziumhzzxXtsKQh~EBpZpH~XiBwdAOm5JX05yK3nxySlXDd8nqk8kMYfk53p26bC16QGE-fUlp4PLGck6ry5ZemSwEea-Ec1roMsM6be2LITNjuDV0uppBDMQLMfeEmisQIkQ6Xb2g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'sidebar main main';
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 60px auto;
+    min-height: 100vh;
+    color: white;
+}
+
+.item-header {
+    grid-area: header;
+}
+
+.gradient {
+    background: linear-gradient(0deg, #131212 50.55%, rgba(0, 0, 0, 0.0001) 99.52%);
+}

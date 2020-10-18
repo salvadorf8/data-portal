@@ -1,0 +1,9 @@
+.item-body {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    font-family: 'NTF-Grand';
+    font-size: 30px;
+    color: #c3a767;
+    padding-top: 100px;
+}
