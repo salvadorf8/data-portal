@@ -95,3 +95,46 @@
     font-size: 12px;
     border-bottom: 1px solid #c3a767;
 }
+
+@media screen and (max-width: 576px) {
+    /* //anything below 800 will get style, anything above will not */
+    .item-a1 {
+        visibility: hidden;
+    }
+    .item-b1 {
+        visibility: hidden;
+    }
+    .header-container {
+        display: grid;
+        height: 50px;
+        width: 100%;
+        grid-template-columns: 5% auto 5% 35% 25%;
+        grid-template-rows: 25px 25px;
+        grid-auto-flow: row;
+        /* border: 1px solid blue; */
+    }
+}
+@media screen and (max-width: 768px) {
+    /* //anything below 800 will get style, anything above will not */
+    .item-a1 {
+        visibility: hidden;
+    }
+    .item-b1 {
+        visibility: hidden;
+    }
+    .header-container {
+        display: grid;
+        height: 50px;
+        width: 100%;
+        grid-template-columns: 5% auto 5% 35% 25%;
+        grid-template-rows: 25px 25px;
+        grid-auto-flow: row;
+        /* border: 1px solid blue; */
+    }
+}
+@media screen and (max-width: 992px) {
+    /* //anything below 800 will get style, anything above will not */
+}
+@media screen and (max-width: 1200px) {
+    /* //anything below 800 will get style, anything above will not */
+}

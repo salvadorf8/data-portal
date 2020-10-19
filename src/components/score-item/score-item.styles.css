@@ -1,7 +1,7 @@
 .body-container {
     display: grid;
     height: 35px;
-    grid-template-columns: 40px auto 25px 95px 95px 20px;
+    grid-template-columns: 40px auto 25px 95px 95px 15px;
     grid-template-rows: 30px;
 
     grid-auto-flow: row;
@@ -53,4 +53,50 @@
     grid-column: 6;
     grid-row: 1;
     /* border: 1px solid purple; */
+}
+
+@media screen and (max-width: 576px) {
+    /* //anything below 800 will get style, anything above will not */
+    .body-container {
+        display: grid;
+        height: 35px;
+        grid-template-columns: 10% 15% 25px 34% 25% 5%;
+        grid-template-rows: 30px;
+        min-width: 100%;
+
+        grid-auto-flow: row;
+    }
+    .item-3 {
+        grid-column: 3;
+        grid-row: 1;
+        opacity: 0.25;
+        visibility: hidden;
+        /* border: 1px solid red; */
+    }
+}
+@media screen and (max-width: 768px) {
+    /* //anything below 800 will get style, anything above will not */
+    .body-container {
+        display: grid;
+        height: 35px;
+        grid-template-columns: 10% 15% 25px 34% 25% 5%;
+        grid-template-rows: 30px;
+        min-width: 100%;
+
+        grid-auto-flow: row;
+    }
+
+    .item-3 {
+        grid-column: 3;
+        grid-row: 1;
+        opacity: 0.25;
+        visibility: hidden;
+        /* border: 1px solid red; */
+    }
+}
+@media screen and (max-width: 992px) {
+    /* //anything below 800 will get style, anything above will not */
+}
+@media screen and (max-width: 1200px) {
+    /* //anything below 800 will get style, anything above will not */
 }
