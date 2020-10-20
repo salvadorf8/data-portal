@@ -16,7 +16,7 @@ const ScoreItem = (props) => {
                 </div>
                 <div className='item-4'>{props.reactionTime}s</div>
                 <div className='item-5'>{props.bestTime}s</div>
-                <div className='item-6' onMouseEnter={() => <CustomPopover />}>
+                <div className='item-6'>
                     <CustomPopover {...props} />
                 </div>
             </div>
