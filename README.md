@@ -10,4 +10,4 @@ react-router-dom - to and from Landing page and Dashboard
 
 ### Database and Hosting
 
-Made use of Firebase for the firestore database and hosting services
+Made use of Firebase for the firestore database, hosting, and anonymous authentication services
