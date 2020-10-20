@@ -27,7 +27,7 @@ class DataPortal extends React.Component {
 
             return {
                 id: doc.id,
-                createdAt: createdAt,
+                createdAt: new Date(createdAt.seconds * 1000),
                 initials: initials,
                 reactionTime: reactionTime.toFixed(3),
                 bestTime: totalTime.toFixed(3)

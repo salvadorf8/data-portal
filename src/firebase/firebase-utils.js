@@ -20,19 +20,13 @@ export const firestore = firebase.firestore();
 export const auth = firebase.auth();
 
 export const signInAnonymously = () => {
-    console.log('made it here');
+    auth.signInAnonymously().catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
 
-    auth.signInAnonymously()
-        .then(function () {
-            console.log('logged in as anonymous!');
-        })
-        .catch(function (error) {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-
-            console.log(errorCode);
-            console.log(errorMessage);
-        });
+        console.log(errorCode);
+        console.log(errorMessage);
+    });
 };
 
 export const getScoreData = async () => {
