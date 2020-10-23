@@ -1,10 +1,15 @@
 .body-container {
     display: grid;
     height: 35px;
-    grid-template-columns: 40px auto 25px 95px 95px 15px;
+    grid-template-columns: 40px auto 30px 80px 95px 25px;
     grid-template-rows: 30px;
 
     grid-auto-flow: row;
+    /* border: 1px solid green; */
+}
+
+.body-container:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .item-1 {
@@ -79,7 +84,7 @@
     .body-container {
         display: grid;
         height: 35px;
-        grid-template-columns: 10% 15% 25px 34% 25% 5%;
+        grid-template-columns: 10% 15% 75px 24% 20% 5%;
         grid-template-rows: 30px;
         min-width: 100%;
 

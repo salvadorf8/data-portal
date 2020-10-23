@@ -1,3 +1,4 @@
 .item-sidebar {
     grid-area: sidebar;
+    /* border: 1px solid white; */
 }

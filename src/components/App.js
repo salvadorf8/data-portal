@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Header from './header/header.component';
 import LandingPage from '../pages/Landing-page/landing-page.component';
-import DataPortal from './data-portal/data-portal.component';
+import Dashboard from './data-portal/dashboard.component';
 import { auth } from '../firebase/firebase-utils';
 import { MDBMask } from 'mdbreact';
 
@@ -31,7 +31,7 @@ class App extends React.Component {
                             <Header currentUser={this.state.currentUser} />
                         </div>
                         <Switch>
-                            <Route path='/' exact render={() => (this.state.currentUser ? <DataPortal /> : <LandingPage />)} />
+                            <Route path='/' exact render={() => (this.state.currentUser ? <Dashboard /> : <LandingPage />)} />
                         </Switch>
                     </BrowserRouter>
                 </div>

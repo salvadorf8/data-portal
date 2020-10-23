@@ -4,6 +4,7 @@ import ScoreItem from '../score-item/score-item.component';
 
 import { ReactComponent as UserIcon } from '../../assets/users.svg';
 import { ReactComponent as ReactionTimeIcon } from '../../assets/reactiontime.svg';
+import { ReactComponent as LoadMore } from '../../assets/load-more-participants.svg';
 
 import './score-list.styles.css';
 
@@ -17,8 +18,8 @@ class ScoreList extends React.Component {
 
     render() {
         return (
-            <div className='item-main'>
-                <div className='header-container'>
+            <div className='custom-table'>
+                <div className='table-header'>
                     <div className='item-a1'>
                         <UserIcon />
                     </div>
@@ -34,7 +35,14 @@ class ScoreList extends React.Component {
                     <div className='item-e'>AVG</div>
                     <div className='item-f'>BEST</div>
                 </div>
-                {this.renderList()}
+                <div className='table-data'>{this.renderList()}</div>
+                <div className='table-footer'>
+                    <div className='option' onClick={this.props.handleClick}>
+                        LOAD MORE PARTICIPANTS <LoadMore />
+                    </div>
+                </div>
+
+                {/* <button onClick={this.props.handleClick}>LOAD MORE PARTICIPANTS</button> */}
             </div>
         );
     }

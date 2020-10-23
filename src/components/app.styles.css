@@ -12,15 +12,17 @@ body {
     display: grid;
     grid-template-areas:
         'header header header'
-        'sidebar main main';
+        'sidebar main main'
+        'sidebar footer footer';
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px auto 100px;
     min-height: 100vh;
     color: white;
 }
 
 .item-header {
     grid-area: header;
+    /* border: 1px solid white; */
 }
 
 .gradient {

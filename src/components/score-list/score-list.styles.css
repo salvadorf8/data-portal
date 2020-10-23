@@ -1,5 +1,21 @@
-.item-main {
+.custom-table {
     grid-area: main;
+    /* border: 1px solid white; */
+}
+
+.table-data {
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table-footer {
+    grid-area: footer;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    /* border: 1px solid white; */
 }
 
 .add-opacity {
@@ -10,7 +26,7 @@
     color: white;
 }
 
-.header-container {
+.table-header {
     display: grid;
     height: 50px;
     width: 100%;
